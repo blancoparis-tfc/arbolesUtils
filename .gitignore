@@ -24,3 +24,9 @@ build/classes/test/org/dbp/util/arboles/core/PruebasJavaFxTest.class
 build/tmp/test/jar_extract_4595072206718608840_tmp
 /build/
 /bin/
+
+.classpath
+.project
+.settings/gradle/org.springsource.ide.eclipse.gradle.core.import.prefs
+.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+.settings/gradle/org.springsource.ide.eclipse.gradle.refresh.prefs

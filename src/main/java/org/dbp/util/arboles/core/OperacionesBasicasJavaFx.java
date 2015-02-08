@@ -14,13 +14,17 @@ import javafx.scene.control.TreeItem;
 public class OperacionesBasicasJavaFx<C> implements OperacionesBasicas<TreeItem<C>>{
 
 	@Override
-	public void addHijo(TreeItem<C> elemento, TreeItem<C> hijo) {
-		elemento.getChildren().add(hijo);
+	public OperacionesBasicas<TreeItem<C>> addHijo(TreeItem<C> elemento, TreeItem<C>... hijos) {
+		for(TreeItem<C> hijo:hijos){
+			elemento.getChildren().add(hijo);
+		}
+		return this;
 	}
 
 	@Override
-	public void eliminarHijo(TreeItem<C> elemento, TreeItem<C> hijo) {
+	public OperacionesBasicas<TreeItem<C>> eliminarHijo(TreeItem<C> elemento, TreeItem<C> hijo) {
 		elemento.getChildren().remove(hijo);
+		return this;
 	}
 
 	@Override

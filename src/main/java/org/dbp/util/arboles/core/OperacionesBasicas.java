@@ -27,7 +27,7 @@ public interface OperacionesBasicas <T>{
 	 * @param elemento	El elemento al que vamos añadir el hijo.
 	 * @param hijo		El hijo que vamos añadir.
 	 */
-	public void addHijo(T elemento,T hijo);
+	public OperacionesBasicas<T> addHijo(T elemento,T... hijo);
 	
 	/**
 	 * 
@@ -36,7 +36,7 @@ public interface OperacionesBasicas <T>{
 	 * @param elemento	El elemento al que vamos a eliminar un hijo
 	 * @param hijo		El hijo que vamos a eliminar.
 	 */
-	public void eliminarHijo(T elemento,T hijo);
+	public OperacionesBasicas<T> eliminarHijo(T elemento,T hijo);
 	
 	/**
 	 * 

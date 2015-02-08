@@ -72,4 +72,5 @@ public class NodoGenericoDTO<T extends Serializable, ID extends Serializable>
 		this.hijos = hijos;
 	}
 
+	
 }
